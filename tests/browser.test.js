@@ -24,11 +24,11 @@ test("The stack should be empty in the beginning", async () => {
   expect(stack).toEqual("n/a");
 });
 
-test("Should print the value that is pushed to the stack", async () => {
+test("The display should print undefined if stack is empty and user clicks peek-button", async () => {
+  let peek = await driver.findElement(By.id("peek"));
+  await peek.click();
   let stack = await driver.findElement(By.id("top_of_stack")).getText();
-  let push = await driver.findElement(By.id("push"));
-  push.click();
-  expect(stack).toEqual("Golf");
+  expect(stack).toEqual("Bananer");
 });
 
 describe('Clicking "Pusha till stacken"', () => {
