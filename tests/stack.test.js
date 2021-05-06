@@ -22,5 +22,5 @@ test("push to stack with one or more elements should place the element on top", 
   stack.push("A");
   stack.push("B");
   expect(stack.peek()).toBeDefined();
-  expect(stack.peek()).toBe("A");
+  expect(stack.peek()).toBe("B");
 });

@@ -28,7 +28,7 @@ test("The display should print undefined if stack is empty and user clicks peek-
   let peek = await driver.findElement(By.id("peek"));
   await peek.click();
   let stack = await driver.findElement(By.id("top_of_stack")).getText();
-  expect(stack).toEqual("Bananer");
+  expect(stack).toEqual("undefined");
 });
 
 describe('Clicking "Pusha till stacken"', () => {
